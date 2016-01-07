@@ -1,6 +1,18 @@
 class PYSTL(object):
+    """
+    RPY2 wrapper around R's STL package for time series decomposition
+    """
     
     def convert_pd_freqstr(df):
+        """
+        Returns the periodicity of the time series dataframe.
+        Yearly->1
+        Monthly->12
+        Daily->365
+
+        :param df: Pandas DataFrame with index type DatetimeIndex
+        :return:
+        """
     
         freqstr = df.index.freq.freqstr
         freq_interval = freqstr[-1]
@@ -17,6 +29,14 @@ class PYSTL(object):
 
 
     def decompose(self, ser, np=12):
+        """
+        I would like to give credit to andreas-h on Github. I used their gist
+        https://gist.github.com/andreas-h/7808564 as a reference point and borrowed a lot of stuff.
+
+        :param ser: Pandas series having DatetimeIndex
+        :param np: number of periods
+        :return:
+        """
         from rpy2 import robjects
         from numpy import asarray
         
