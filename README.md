@@ -22,3 +22,7 @@ As simple as it gets. Obviously, there are many awesome packages in Python which
 1. [Linear Model (lm)](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html)
 2. [Seasonal decomposition of time series by LOESS (stl)](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/stl.html)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nipunbatra/pythor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
